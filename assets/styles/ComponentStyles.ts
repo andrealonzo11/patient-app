@@ -1905,6 +1905,12 @@ export const ComponentStyles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  deletePatientButton: {
+    height: 44,
+    backgroundColor: Color.red,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   deleteAccountDeleteText: {
     fontSize: 16,
     fontWeight: '700',

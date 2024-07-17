@@ -7,9 +7,11 @@ import CButton from "./CButton";
 import { ScreenStyles } from "@/assets/styles/ScreenStyles";
 import { router } from "expo-router";
 import patientData from "@/files/data";
+import { useStore } from "zustand";
+import { patientStore } from "@/stores/patientStore";
 
 const PatientList = () => {
-  const [patients, setPatients] = useState(patientData);
+  const { patients, setPatients } = useStore(patientStore);
 
   return (
     <ThemedView style={ScreenStyles.defaultFlexContainer}>
